@@ -15,10 +15,17 @@ A complete setup with the tools below which can help you skip the initial setup 
 
 ## Installation
 
+*Please note that PHP 8.3 is still not support, use previous versions.*
+
 Clone the repo locally:
 
 ```sh
 git clone https://github.com/flespindola/quick-setup-web.git
+```
+
+Go to the folder (you can choose your own folder's name in clone step)
+
+```sh
 cd quick-setup-web
 ```
 
@@ -52,10 +59,16 @@ Generate application key:
 php artisan key:generate
 ```
 
-Start the docker container with sail.
+Start the Docker container with sail, if you want to use Docker.
 
 ```sh
 ./vendor/bin/sail up
+```
+
+If you don't want to use Docker, run Larave's local server:
+
+```sh
+php artisan serve
 ```
 
 Run database migrations:
