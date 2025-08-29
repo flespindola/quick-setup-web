@@ -1,0 +1,67 @@
+# Cursor Rules for Quick Setup Web Repository
+
+## Project Overview
+This is a modern web application built with Laravel 11, React 19, TypeScript, and Inertia.js. The project follows a full-stack architecture where Laravel serves as the backend API and React handles the frontend with server-side rendering capabilities.
+
+## Technology Stack
+- **Backend**: Laravel 11 (PHP 8.1+)
+- **Frontend**: React 19 with TypeScript
+- **Build Tool**: Vite 7
+- **Styling**: Bootstrap 5.3 + custom CSS
+- **UI Components**: Headless UI 2
+- **State Management**: React hooks + Inertia.js for server state
+- **Testing**: Pest (PHP) + Vitest (JavaScript)
+- **Development**: Laravel Sail (Docker) or local PHP server
+
+## Architecture Patterns
+- **Laravel**: Follow MVC pattern, use Eloquent ORM, implement proper validation with Form Requests
+- **React**: Functional components with hooks, prefer composition over inheritance
+- **TypeScript**: Strong typing for all components, interfaces for props and API responses
+- **Inertia.js**: Server-side routing with SPA-like experience, use Inertia forms and navigation
+- **Database**: Use migrations, seeders, and factories for data management
+
+## Code Style & Conventions
+- **PHP**: PSR-12 coding standards, use Laravel conventions
+- **TypeScript**: Strict mode enabled, prefer interfaces over types
+- **React**: Use modern React patterns, avoid class components
+- **CSS**: Bootstrap classes first, custom CSS for specific styling needs
+- **Naming**: Use descriptive names, follow Laravel naming conventions
+
+## File Structure
+- **Backend**: `app/` (Controllers, Models, Middleware), `routes/`, `database/`
+- **Frontend**: `resources/js/` (Components, Pages, Layouts, Types)
+- **Assets**: `resources/css/`, `public/build/`
+- **Configuration**: `config/`, `.env`, `vite.config.mjs`
+
+## Development Workflow
+- Use Laravel Sail for Docker development or `php artisan serve` for local
+- Run `pnpm dev` for frontend development with hot reload
+- Use `php artisan make:` commands for Laravel scaffolding
+- Follow Git workflow with meaningful commit messages
+- Write tests for new features
+
+## Common Patterns
+- **API Controllers**: Return JSON responses or Inertia views
+- **React Components**: Use TypeScript interfaces for props, implement proper error handling
+- **Forms**: Use Inertia form helpers with Laravel validation
+- **Authentication**: Laravel Breeze with Sanctum for API tokens
+- **Database**: Use migrations for schema changes, seeders for test data
+
+## Dependencies
+- **PHP**: Laravel ecosystem packages via Composer
+- **JavaScript**: React ecosystem via pnpm, Vite for building
+- **CSS**: Bootstrap via CDN or local build
+- **Development**: Pest, Laravel Sail, Vite dev server
+
+## Testing Strategy
+- **Backend**: Pest for PHP unit and feature tests
+- **Frontend**: Vitest for component testing
+- **Integration**: Test Inertia.js interactions with Laravel backend
+- **Database**: Use database transactions and factories for test data
+
+## Performance Considerations
+- Use Laravel's query optimization and eager loading
+- Implement proper React component memoization
+- Use Vite's build optimization for production assets
+- Implement proper caching strategies in Laravel
+- Use Inertia.js partial reloads when appropriate
