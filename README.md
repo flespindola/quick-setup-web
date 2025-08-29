@@ -3,19 +3,19 @@
 This repository was made for web developers who want to start a new application with modern tools fast and easy.
 A complete setup with the tools below which can help you skip the initial setup and go straight to development or even MVP.
 
-- [Laravel](https://laravel.com/docs).
-- [React](https://react.dev).
-- [TypeScript](https://www.typescriptlang.org/docs/).
-- [Inertia.js](https://inertiajs.com/).
-- [Vite](https://vitejs.dev/).
-- [Bootstrap](https://getbootstrap.com/).
-- [Headless UI](https://headlessui.com/).
-- [Docker](https://www.docker.com/)
-- [Laravel Sail](https://laravel.com/docs/10.x/sail)
+- [Laravel 11](https://laravel.com/docs) - Latest LTS framework
+- [React 19](https://react.dev) - Latest React with modern features
+- [TypeScript](https://www.typescriptlang.org/docs/) - Type-safe JavaScript
+- [Inertia.js 2](https://inertiajs.com/) - Modern SPA without the complexity
+- [Vite 7](https://vitejs.dev/) - Lightning fast build tool
+- [Bootstrap 5.3](https://getbootstrap.com/) - Responsive CSS framework
+- [Headless UI 2](https://headlessui.com/) - Accessible UI components
+- [Docker](https://www.docker.com/) - Containerization
+- [Laravel Sail](https://laravel.com/docs/11.x/sail) - Docker development environment
 
 ## Installation
 
-*Please note that PHP 8.3 is still not support, use previous versions.*
+*This setup now supports PHP 8.1, 8.2, and 8.3 with full compatibility.*
 
 Clone the repo locally:
 
@@ -38,13 +38,13 @@ composer install
 Install NPM dependencies:
 
 ```sh
-npm install
+pnpm install
 ```
 
 Build assets:
 
 ```sh
-npm run build
+pnpm run build
 ```
 
 Setup configuration:
@@ -77,6 +77,34 @@ Run database migrations:
 ./vendor/bin/sail artisan migrate
 ```
 
-## Credits
+## Development
 
-- First work by Fabio Espindola (@flespindola)
+Start the development server with hot reload:
+
+```sh
+pnpm dev
+```
+
+Build for production:
+
+```sh
+pnpm build
+```
+
+Run with Docker Sail:
+
+```sh
+./vendor/bin/sail up -d
+```
+
+## Requirements
+
+- PHP 8.1+ (8.3 recommended)
+- Composer
+- Node.js 18+
+- pnpm (recommended) or npm
+- Docker (optional, for Sail)
+
+## Contributions
+
+- Fabio Espindola (@flespindola)

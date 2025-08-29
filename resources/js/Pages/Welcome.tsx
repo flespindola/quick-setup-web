@@ -145,7 +145,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }: PageProps<
                     <div className="d-flex justify-content-center mt-5 px-5 align-items-center justify-content-between">
 
                         <div className="text-muted mx-auto">
-                            Setup Made By <a href="https://github.com/flespindola">Fabio Espindola</a>
+                            <a href="https://fabioespindola.com">Fabio Espindola</a>
                         </div>
                     </div>
                 </div>
